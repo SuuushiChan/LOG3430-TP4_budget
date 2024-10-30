@@ -14,7 +14,7 @@ jobs:
       - name: Install packages
         run: pip install -r requirements.txt
 
-      - name: Run bisect if tests fail
+      - name: Run bisect
         run: python myscript.py
 
       - name: Show bad commit
