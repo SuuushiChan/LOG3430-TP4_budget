@@ -20,7 +20,7 @@ jobs:
 
       - name: Run bisect if tests fail
         if: ${{ steps.test.outcome == 'failure' }}
-        run: python /.github/workflows/myscript.py
+        run: python myscript.py
 
       - name: Show bad commit
         if: ${{ steps.test.outcome == 'failure' }}
